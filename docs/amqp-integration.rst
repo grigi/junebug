@@ -20,7 +20,7 @@ information.
 
 The data sent over AMQP is the standard Vumi data format.
 
-An example of the data format is:
+An example of the inbound message data format is:
 
 .. code:: json
 
@@ -45,4 +45,22 @@ An example of the data format is:
         "transport_metadata": {},
         "session_event": "resume",
         "message_type": "user_message"
+    }
+
+An example of the event data format is:
+
+.. code:: json
+
+    {
+        "event_id": "5607e9cdc95745d792a70639d6cb346f",
+        "event_type": "ack",
+        "helper_metadata": {},
+        "message_type": "event",
+        "message_version": "20110921",
+        "routing_metadata": {},
+        "sent_message_id": "78add2d0f3f946d2a42cb43d1b2aba74",
+        "timestamp": "2016-03-24 08:25:46.640252",
+        "transport_metadata": {},
+        "transport_name": "2427d857-688d-4cee-88d9-8e0e32dfdc13",
+        "user_message_id": "78add2d0f3f946d2a42cb43d1b2aba74"
     }
